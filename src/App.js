@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './App.css';
+import './style/App.css';
 import Carousel from 'react-bootstrap/Carousel'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import 'bootstrap/dist/css/bootstrap.css';
 import { FaHome, FaAngleDoubleLeft } from "react-icons/fa";
 import Row from "react-bootstrap/Row";
-
+import StreamFuncionality from './StreamFuncionality';
 
 class App extends Component {
   render() {
@@ -65,14 +65,6 @@ class Hub extends Component {
     )
   }
 }
-class StreamFuncionality extends Component {
-  render() {
-    return(
-        <div className={'funcionalidade'}>
-          oi
-        </div>
-    )
-  }
-}
+
 
 export default App;
