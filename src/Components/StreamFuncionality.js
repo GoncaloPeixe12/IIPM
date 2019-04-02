@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
+import '../style/StreamFuncionality.css';
 
 class StreamFuncionality extends Component {
     render() {

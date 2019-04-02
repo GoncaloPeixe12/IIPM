@@ -6,7 +6,8 @@ import Col from 'react-bootstrap/Col'
 import 'bootstrap/dist/css/bootstrap.css';
 import { FaHome, FaAngleDoubleLeft } from "react-icons/fa";
 import Row from "react-bootstrap/Row";
-import StreamFuncionality from './StreamFuncionality';
+import StreamFuncionality from './Components/StreamFuncionality';
+import RoutingFuncionality from './Components/RoutingFuncionality';
 
 class App extends Component {
   render() {
@@ -20,7 +21,6 @@ class App extends Component {
 
 
     return (
-
         <div>
           <div className='container-fluid home'>
             <div className='row'>
