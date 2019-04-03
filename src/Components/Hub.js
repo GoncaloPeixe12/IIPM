@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import React, {Component} from 'react';
 import {FaRegSun, FaRunning, FaCamera} from 'react-icons/fa';
-import Link from 'react-bootstrap/Link';
+import { Link } from 'react-router-dom';
 
 class Hub extends Component {
     render() {
@@ -13,10 +13,10 @@ class Hub extends Component {
             <div className={'ponto1'} style={style}>
                 <Carousel interval={null} indicators={false}>
                     <Carousel.Item>
-                        <div><Link href={}><FaRegSun size='5em'/></Link></div>
+                        <div><FaRegSun size='5em'/></div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div ><FaRunning size='5em'/></div>
+                        <div><Link to={'FuncRouter/1'}><FaRunning size='5em'/></Link></div>
                     </Carousel.Item>
                     <Carousel.Item>
                         <div><FaCamera size='5em'/></div>
