@@ -11,10 +11,10 @@ class RoutingFuncionalityRouter extends Component {
         return(
             <Router>
                 <Route path={'/FuncRouter'} component={TopMenu}/>
-                <Route path={'/FuncRouter/1'} component={RoutingFuncionality}/>
-                <Route path={'/FuncRouter/2'} component={PlanEx}/>
-                <Route path={'/FuncRouter/3'} component={RunEx}/>
-                <Route path={'/FuncRouter/3'} component={Options}/>
+                <Route path={'/FuncRouter/1'} exact component={RoutingFuncionality}/>
+                <Route path={'/FuncRouter/1/1'} component={PlanEx}/>
+                <Route path={'/FuncRouter/1/2'} component={RunEx}/>
+                <Route path={'/FuncRouter/1/3'} component={Options}/>
             </Router>
         )
     }
