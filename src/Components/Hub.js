@@ -2,6 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import React, {Component} from 'react';
 import {FaRegSun, FaRunning, FaCamera} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import '../style/Hub.css';
 
 class Hub extends Component {
     render() {
