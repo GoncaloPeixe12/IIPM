@@ -13,7 +13,8 @@ class RoutingFuncionality extends Component{
             textAlign: 'center',
         };
         const containerStyle = {
-            marginTop: '50px',
+            marginTop: '200px',
+            width: '400px'
         };
 
         return(
