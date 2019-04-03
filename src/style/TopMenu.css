@@ -1,0 +1,10 @@
+.home {
+    background-color: grey;
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+}
+.barbecue {
+    background-color: green;
+    height: 50px;
+}
