@@ -10,8 +10,8 @@ class TopMenu extends Component {
             <div className='container-fluid home'>
                 <div className='row'>
                     <div className='col-1'> <Button variant="dark"><FaHome/></Button> </div>
-                    <div className='col-1'> <Button variant="dark" block={'true'}><FaAngleDoubleLeft/></Button> </div>
-                    <div className='col barbecue'>  </div>
+                    <div className='col-1'> <Button variant="dark" ><FaAngleDoubleLeft/></Button> </div>
+                    <div className='col '>  </div>
                 </div>
             </div>
         )

@@ -1,31 +1,19 @@
 import React, {Component} from 'react';
-import TopMenu from "./TopMenu";
 import Hub from './Hub';
-import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.css';
+import '../style/Home.css';
 
 
 class Home extends Component {
     render() {
         return(
             <div>
-                <TopMenu/>
+                <div className={'container'}>
+                    <div className={'row'}>
+                        <h1>Welcome!</h1>
+                    </div>
+                </div>
                 <Hub/>
-                <Container>
-                    <Row>
-                        <Col >
-                            hey
-                        </Col>
-                        <Col >
-                            oi
-                        </Col>
-                        <Col>
-                            lul
-                        </Col>
-                    </Row>
-                </Container>
             </div>
         )
     }
