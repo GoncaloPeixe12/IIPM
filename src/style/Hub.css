@@ -1,8 +1,9 @@
-.ponto1 {
+.carousel {
     height: 300px;
     width: auto;
     text-align: center;
     line-height: 300px;
+    background-color: #3a79e0;
 }
 
 .prev, .next {

@@ -7,10 +7,6 @@ class Hub extends Component {
     render() {
         var currentItem = 1;
 
-        const style = {
-            backgroundColor: '#3a79e0',
-        };
-
         function showItem(n){
             var i;
             var slides = document.getElementsByClassName("carousel_item");
@@ -27,20 +23,19 @@ class Hub extends Component {
         }
 
         return(
-            <div className={'ponto1'} style={style}>
-                <div className={'carousel'}>
-                    <div className={'carousel_item'} style={{display: 'block'}}>
-                        <div><Link to={''}><FaRegSun className={'icon'} size='5em'/></Link></div>
-                    </div>
-                    <div className={'carousel_item'}>
-                        <div><Link to={'FuncRouter/1'}><FaRunning className={'icon'} size='5em'/></Link></div>
-                    </div>
-                    <div className={'carousel_item'}>
-                        <div><Link to={''}><FaCamera className={'icon'} size='5em'/></Link></div>
-                    </div>
-                    <a className="prev" onClick={(e) => changeItem(-1, e)}>&#10094;</a>
-                    <a className="next" onClick={(e) => changeItem(1 ,e)}>&#10095;</a>
+            
+            <div className={'carousel'}>
+                <div className={'carousel_item'} style={{display: 'block'}}>
+                    <div><Link to={''}><FaRegSun className={'icon'} size='5em'/></Link></div>
                 </div>
+                <div className={'carousel_item'}>
+                    <div><Link to={'FuncRouter/1'}><FaRunning className={'icon'} size='5em'/></Link></div>
+                </div>
+                <div className={'carousel_item'}>
+                    <div><Link to={''}><FaCamera className={'icon'} size='5em'/></Link></div>
+                </div>
+                <a className="prev" onClick={(e) => changeItem(-1, e)}>&#10094;</a>
+                <a className="next" onClick={(e) => changeItem(1 ,e)}>&#10095;</a>
             </div>
         )
     }
