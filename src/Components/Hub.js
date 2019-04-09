@@ -1,4 +1,3 @@
-import Carousel from 'react-bootstrap/Carousel';
 import React, {Component} from 'react';
 import {FaRegSun, FaRunning, FaCamera} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -6,23 +5,37 @@ import '../style/Hub.css';
 
 class Hub extends Component {
     render() {
-        const style = {
-            backgroundColor: '#3a79e0',
-        };
+        var currentItem = 1;
+
+        function showItem(n){
+            var i;
+            var slides = document.getElementsByClassName("carousel_item");
+            if (n > slides.length) {currentItem = 1}
+            if (n < 1) {currentItem = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[currentItem-1].style.display = "block";
+        }
+
+        function changeItem(n){
+            showItem(currentItem += n);
+        }
 
         return(
-            <div className={'ponto1'} style={style}>
-                <Carousel interval={null} indicators={false}>
-                    <Carousel.Item>
-                        <div><FaRegSun size='5em'/></div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div><Link to={'FuncRouter/1'}><FaRunning size='5em'/></Link></div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div><FaCamera size='5em'/></div>
-                    </Carousel.Item>
-                </Carousel>
+            
+            <div className={'carousel'}>
+                <div className={'carousel_item'} style={{display: 'block'}}>
+                    <div><Link to={''}><FaRegSun className={'icon'} size='5em'/></Link></div>
+                </div>
+                <div className={'carousel_item'}>
+                    <div><Link to={'FuncRouter/1'}><FaRunning className={'icon'} size='5em'/></Link></div>
+                </div>
+                <div className={'carousel_item'}>
+                    <div><Link to={''}><FaCamera className={'icon'} size='5em'/></Link></div>
+                </div>
+                <a className="prev" onClick={(e) => changeItem(-1, e)}>&#10094;</a>
+                <a className="next" onClick={(e) => changeItem(1 ,e)}>&#10095;</a>
             </div>
         )
     }
