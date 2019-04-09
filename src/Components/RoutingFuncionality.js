@@ -17,24 +17,26 @@ class RoutingFuncionality extends Component{
             marginTop: '200px',
             width: '400px'
         };
-
+        // para o Duarte, Container "gots" to go transferir para CSS
         return(
             <div>
                 <Container style={containerStyle}>
                     <Row>
                         <Col style={style}>
-                            <Button variant={'dark'} size={'lg'}><Link to={'FuncRouter/1/1'}>Plan</Link></Button>
+                            <Button variant={'dark'} size={'lg'}>
+                                <Link to={'/FuncRouter/1/1'}>Plan</Link>
+                            </Button>
                         </Col>
                         <Col style={style}>
                             <Button variant={'dark'} size={'lg'}>
-                                <Link to={'FuncRouter/1/2'}>Start Walking!</Link>
+                                <Link to={'/FuncRouter/1/2'}>Start Walking!</Link>
                             </Button>
                         </Col>
                     </Row>
                     <Row>
                         <Col style={style}>
                             <Button variant={'dark'} size={'lg'}>
-                                <Link to={'FuncRouter/1/3'}>:.:</Link>
+                                <Link to={'/FuncRouter/1/3'}>:.:</Link>
                             </Button>
                         </Col>
                     </Row>

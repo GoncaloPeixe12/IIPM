@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 class Options extends Component {
     render() {
         return(
-            <div className={'container'}>
+            <div className={'container-fluid'}>
                 <div className={'row'}>Option1</div>
                 <div className={'row'}>Option2</div>
                 <div className={'row'}>Option3</div>
