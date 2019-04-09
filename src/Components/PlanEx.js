@@ -5,6 +5,7 @@ import SearchBar from './SearchBar';
 
 class PlanEx extends Component {
     render() {
+
         return(
             <div className={'ex'}>
                 <SearchBar/>
