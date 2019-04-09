@@ -9,3 +9,9 @@ input[type=text] {
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
 }
+.grid-container {
+    grid-template-columns: auto;
+    background-color: #505660;
+    padding: 5px;
+    text-align: left;
+}

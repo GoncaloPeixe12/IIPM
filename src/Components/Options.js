@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
+import {Link} from 'react-router-dom';
 
 class Options extends Component {
     render() {
         return(
-            <div className={'container-fluid'}>
-                <div className={'row'}>Option1</div>
-                <div className={'row'}>Option2</div>
-                <div className={'row'}>Option3</div>
-                <div className={'row'}>Option4</div>
-                <div className={'row'}>Option5</div>
+            <div className={'grid-container'}>
+                <div>Route Settings</div>
+                <div><Link to={'/FuncRouter/1/3/1'}>Past Routes</Link></div>
+                <div>About</div>
             </div>
         )
     }

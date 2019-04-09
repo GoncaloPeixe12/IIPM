@@ -8,15 +8,6 @@ import {Link, } from 'react-router-dom';
 
 class TopMenu extends Component {
 
-    constructor(props){
-        super(props);
-        this.goBack = this.goBack.bind(this); // i think you are missing this
-    }
-
-    goBack(){
-        this.props.history.goBack();
-    }
-
     render() {
         return(
             <div className='container-fluid home'>

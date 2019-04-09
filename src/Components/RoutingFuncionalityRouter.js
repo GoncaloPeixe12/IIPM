@@ -8,6 +8,7 @@ import RunEx from "./RunEx";
 import Options from './Options';
 import "../style/Home.css";
 import Home from './Home';
+import PastRoutes from "./PastRoutes";
 
 class RoutingFuncionalityRouter extends Component {
     render() {
@@ -18,8 +19,9 @@ class RoutingFuncionalityRouter extends Component {
                     <Route path={'/FuncRouter/1'} exact component={RoutingFuncionality}/>
                     <Route path={'/FuncRouter/1/1'} component={PlanEx}/>
                     <Route path={'/FuncRouter/1/2'} component={RunEx}/>
-                    <Route path={'/FuncRouter/1/3'} component={Options}/>
+                    <Route path={'/FuncRouter/1/3'} exact component={Options}/>
                     <Route path={'/home'} component={Home}/>
+                    <Route path={'/FuncRouter/1/3/1'} component={PastRoutes}/>
                 </Router>
             </div>
         )
