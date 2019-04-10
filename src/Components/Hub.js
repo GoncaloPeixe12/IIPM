@@ -34,7 +34,9 @@ class Hub extends Component {
                 <div className={'carousel_item'}>
                     <div><Link to={''}><FaCamera className={'icon'} size='5em'/></Link></div>
                 </div>
+                // eslint-disable-next-line
                 <a className="prev" onClick={(e) => changeItem(-1, e)}>&#10094;</a>
+                // eslint-disable-next-line
                 <a className="next" onClick={(e) => changeItem(1 ,e)}>&#10095;</a>
             </div>
         )

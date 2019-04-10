@@ -4,7 +4,6 @@ import '../style/RoutingFuncionality.css';
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from "react-bootstrap/Row";
-import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import "../style/Buttons.css";
 
@@ -37,9 +36,9 @@ class RoutingFuncionality extends Component{
                     </Row>
                     <Row>
                         <Col style={style}>
-                            <Button variant={'dark'} size={'lg'}>
+                            <button className={"LargeButton"}>
                                 <Link to={'/FuncRouter/1/3'}>:.:</Link>
-                            </Button>
+                            </button>
                         </Col>
                     </Row>
                 </Container>
