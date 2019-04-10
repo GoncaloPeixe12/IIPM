@@ -4,10 +4,9 @@
 
 }
 .Home {
-    display: block;
-    margin-top: 300px;
-    margin-right: auto;
-    margin-left: auto;
+    top: auto;
+    display: inline-block;
+    margin: auto;
     height: 358px;
     width: 600px;
     text-align: center;
