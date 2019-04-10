@@ -26,7 +26,7 @@ class Hub extends Component {
             
             <div className={'carousel'}>
                 <div className={'carousel_item'} style={{display: 'block'}}>
-                    <div><Link to={''}><FaRegSun className={'icon'} size='5em'/></Link></div>
+                    <div><Link to={'/Home/Options/'}><FaRegSun className={'icon'} size='5em'/></Link></div>
                 </div>
                 <div className={'carousel_item'}>
                     <div><Link to={'FuncRouter/1'}><FaRunning className={'icon'} size='5em'/></Link></div>
