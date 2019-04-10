@@ -1,0 +1,33 @@
+.optionsTab{
+    height: 100%;
+    width: 25%;
+    background-color: #515151;
+    display: inline-block;
+}
+
+.opt {
+    height: 25%;
+    border-bottom: solid 5px #3e4247;
+    border-top: solid 2px white;
+    padding-top: 20%;
+    font-weight: bold;
+    border-right: solid 5px #3e4247;
+}
+
+.opt:hover{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+.tabItem{
+    display:none;
+}
+
+.options{
+    float:right;
+    position: inline-block;
+    background-color: #4174c6;
+    height:100%;
+    width: 75%;
+    overflow: auto;
+}
