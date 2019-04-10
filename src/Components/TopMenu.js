@@ -4,7 +4,7 @@ import { FaHome, FaAngleDoubleLeft } from "react-icons/fa";
 import Button from 'react-bootstrap/Button';
 import '../style/TopMenu.css';
 import {Link, } from 'react-router-dom';
-// import {Home} from './Home';
+
 
 class TopMenu extends Component {
     static context = {
