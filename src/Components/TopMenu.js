@@ -13,7 +13,7 @@ class TopMenu extends Component {
             <div className='container-fluid home'>
                 <div className='row'>
                     <div className='col-1'> <Button variant="dark">
-                        <Link to={'/home'}><FaHome/></Link>
+                        <Link to={'/Home'}><FaHome/></Link>
                     </Button> </div>
                     <div className='col-1'> <Button><FaAngleDoubleLeft/></Button></div>
                     <div className='col '>  </div>

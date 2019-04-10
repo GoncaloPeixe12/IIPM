@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col'
 import Row from "react-bootstrap/Row";
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import "../style/Buttons.css";
 
 class RoutingFuncionality extends Component{
     render() {
@@ -14,8 +15,9 @@ class RoutingFuncionality extends Component{
             textAlign: 'center',
         };
         const containerStyle = {
-            marginTop: '200px',
-            width: '400px'
+            marginTop: 'auto',
+            width: '100%',
+            height: '300px'
         };
         // para o Duarte, Container "gots" to go transferir para CSS
         return(
@@ -23,14 +25,14 @@ class RoutingFuncionality extends Component{
                 <Container style={containerStyle}>
                     <Row>
                         <Col style={style}>
-                            <Button variant={'dark'} size={'lg'}>
+                            <button className={"LargeButton"}>
                                 <Link to={'/FuncRouter/1/1'}>Plan</Link>
-                            </Button>
+                            </button>
                         </Col>
                         <Col style={style}>
-                            <Button variant={'dark'} size={'lg'}>
-                                <Link to={'/FuncRouter/1/2'}>Start Walking!</Link>
-                            </Button>
+                            <button className={"LargeButton"}>
+                            <Link to={'/FuncRouter/1/2'}>Start Walking!</Link>
+                            </button>
                         </Col>
                     </Row>
                     <Row>
