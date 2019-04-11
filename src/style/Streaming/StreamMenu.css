@@ -1,0 +1,15 @@
+.menu{
+    height:100%;
+    width:100%;
+}
+
+.buttonContainer{
+
+    height: 30%;
+}
+
+.roundButton{
+    border: solid 3px black;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}

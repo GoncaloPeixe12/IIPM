@@ -17,7 +17,7 @@ class StreamingRouter extends Component {
         return(
             <div className={'Home'}>
                 <Router>
-                    <Route path={'/StreamFunc'} component={SteamMenu}/>
+                    <Route path={'/StreamFunc'} exact component={SteamMenu}/>
                     <Route path={'/StreamFunc/1'} exact component={StreamFunc}/>
                     <Route path={'/StreamFunc/1/1'} component={StreamSettings}/>
                     <Route path={'/StreamFunc/2'} exact component={CallFunc}/>
