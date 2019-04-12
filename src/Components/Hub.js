@@ -32,7 +32,7 @@ class Hub extends Component {
                     <div><Link to={'FuncRouter/1'}><FaRunning className={'icon'} size='5em'/></Link></div>
                 </div>
                 <div className={'carousel_item'}>
-                    <div><Link to={''}><FaCamera className={'icon'} size='5em'/></Link></div>
+                    <div><Link to={'StreamFunc'}><FaCamera className={'icon'} size='5em'/></Link></div>
                 </div>
                 <a className="prev" onClick={(e) => changeItem(-1, e)}>&#10094;</a>
                 <a className="next" onClick={(e) => changeItem(1 ,e)}>&#10095;</a>

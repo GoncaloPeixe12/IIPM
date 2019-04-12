@@ -1,15 +1,30 @@
 .menu{
     height:100%;
     width:100%;
+	position: absolute;
+	z-index: 1;
 }
 
 .buttonContainer{
-
-    height: 30%;
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+	width: 100%;
 }
 
 .roundButton{
-    border: solid 3px black;
+    position: relative;
+    top: 35%;
+    left: 20%;
+    height:50%;
+    width: 88.75px;
+    
+    border: solid 3px ;
     border-radius: 50%;
     background-color: whitesmoke;
+}
+
+.rightButton {
+    right: 20%;
+    left: auto;
 }
