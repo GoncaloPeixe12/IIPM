@@ -54,8 +54,8 @@ class StreamFunc extends Component{
         };
 
 
-        let play = this.state.paused ? invisible : visible;
-        let pause = this.state.paused ? visible : invisible;
+        let play = this.state.paused ? visible : invisible;
+        let pause = this.state.paused ? invisible : visible;
         
 
 
