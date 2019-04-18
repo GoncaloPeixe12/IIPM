@@ -1,0 +1,13 @@
+.streamButtonCont{
+    width: 45%;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    height: 33%;
+    text-align: center;
+}
+
+.streamButton{
+    display: inline-block;
+    margin: 0 auto;
+}
