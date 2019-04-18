@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../style/Streaming/Menu.css';
-import {FaAngleDoubleLeft } from 'react-icons/fa';
-import {Link, } from 'react-router-dom';
+import {FaAngleDoubleLeft, FaCog } from 'react-icons/fa';
+import { withRouter } from 'react-router'; 
 
 class Menu extends Component{
     static context = {
@@ -11,7 +11,9 @@ class Menu extends Component{
     render(){
         return(
             <div className={'optionsMenu'}>
-                <button><FaAngleDoubleLeft/></button>
+                <button className={'backButton'} onClick={() => this.props.history.go(-1)}><FaAngleDoubleLeft/></button>
+                <div className={'menuText'}>Stream</div>
+                <button className={'settingsButton'}><FaCog/></button>
             </div>
         )
     }

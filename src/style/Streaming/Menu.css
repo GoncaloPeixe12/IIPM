@@ -1,7 +1,35 @@
-.options{
+.optionsMenu{
     z-index: 2;
     position: absolute;
     height: 100%;
     width: 100%;
+}
+
+.backButton{
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.menuText{
+    width:40%;
+    padding-top: 1%;
+    bottom: 85%;
+    font-size:220%;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    display: inline-block;
+    text-align: center;
+}
+
+.settingsButton{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
 }
 

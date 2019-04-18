@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import '../style/Home.css';
 import '../style/MainOptions.css';
-import {Link, } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import { FaHome, FaAngleDoubleLeft } from "react-icons/fa";
+import { FaAngleDoubleLeft } from "react-icons/fa";
 import Button from 'react-bootstrap/Button';
 
 

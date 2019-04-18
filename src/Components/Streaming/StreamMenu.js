@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../../style/Streaming/StreamMenu.css';
-import {FaPhone, FaVideo } from 'react-icons/fa';
+import {FaPhone, FaVideo, FaCog, FaAngleDoubleLeft } from 'react-icons/fa';
 import { Redirect  } from 'react-router-dom';
-import Menu from './Menu';
+import '../../style/Streaming/Menu.css';
 import '../../style/Home.css';
 
 class StreamMenu extends Component{
@@ -35,13 +35,15 @@ class StreamMenu extends Component{
         return(
                
             <div className={'Home'}>
-                <Menu/>
-            
+                           
                 <div className={'menu'}>
+                    <button className={'backButton notBackground'} onClick={() => this.props.history.go(-1)}><FaAngleDoubleLeft size='4em'/></button>
+                    <div className={'menuText notBackground'}>Stream</div>                 
                     <div className={'buttonContainer'}>
-                        <button className={'roundButton'} onClick={this.handleCall}><FaPhone size='4em'/></button>
-                        <button className={'roundButton rightButton'} onClick={this.handleStream}><FaVideo size='4em'/></button>
+                        <button className={'roundButton notBackground'} onClick={this.handleCall}><FaPhone size='4em'/></button>
+                        <button className={'roundButton rightButton notBackground'} onClick={this.handleStream}><FaVideo size='4em'/></button>
                     </div>
+                    <button className={'settingsButton notBackground'}><FaCog size='4em'/></button>
                 </div>
             </div>
         )

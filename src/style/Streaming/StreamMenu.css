@@ -13,6 +13,7 @@
 }
 
 .roundButton{
+    z-index: 3;
     position: relative;
     top: 35%;
     left: 20%;
@@ -27,4 +28,8 @@
 .rightButton {
     right: 20%;
     left: auto;
+}
+
+.notBackground{
+    background-color: #4286f4;
 }
