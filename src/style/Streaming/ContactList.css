@@ -1,0 +1,28 @@
+.sideBar{
+    position: absolute;
+    height: 80%;
+    width:14%;
+    top: 20%;
+    
+}
+
+.sideButton{
+    top:0;
+    height: 50%;
+    width: 100%;
+}
+
+.list{
+    position: absolute;
+    height: 80%;
+    width: 86%;
+    bottom: 0;
+    right: 0;
+}
+
+.listItem{
+    height: 33%;
+    border: 2px solid rgb(49, 49, 49);
+    border-bottom: 0px;
+    background: gray;
+}

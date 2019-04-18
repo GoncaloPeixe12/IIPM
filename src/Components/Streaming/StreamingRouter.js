@@ -7,6 +7,7 @@ import StreamSettings from './StreamSettings';
 import CallFunc from './CallFunc';
 import CallOptions from './CallOptions';
 import ContactList from './ContactList';
+import HelpMenu from './HelpMenu';
 
 import "../../style/Home.css";
 import Home from '../Home';
@@ -23,6 +24,7 @@ class StreamingRouter extends Component {
                     <Route path={'/StreamFunc/2'} exact component={CallFunc}/>
                     <Route path={'/StreamFunc/2/1'} component={CallOptions}/>
                     <Route path={'/StreamFunc/2/2'} component={ContactList}/>
+                    <Route path={'/StreamFunc/Help'} component={HelpMenu}/>
                     <Route path={'/Home'} component={Home}/>
                 </Router>
             </div>

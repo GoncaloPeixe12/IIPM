@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { FaHome, FaAngleDoubleLeft } from "react-icons/fa";
 import Button from 'react-bootstrap/Button';
 import '../style/TopMenu.css';
-import {Link, } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 
 
 class TopMenu extends Component {

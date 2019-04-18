@@ -11,12 +11,24 @@
     position: absolute;
     border-bottom: 2px solid black;
     border-right: 2px solid black;
+    width: 14%;
+    height:20%;
+}
+
+.helpButton{
+    right: 0;
+    top: 0;
+    position: absolute;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    width: 14%;
+    height: 20%;
 }
 
 .menuText{
     width:40%;
     padding-top: 1%;
-    bottom: 85%;
+    height: 20%;
     font-size:220%;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
