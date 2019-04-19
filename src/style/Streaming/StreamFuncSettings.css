@@ -1,0 +1,56 @@
+.optsBar{
+    position: absolute;
+    height: 80%;
+    width:25%;
+    top: 20%;
+    border-top: 2px black solid;
+    border-right: 2px solid black;
+    border-bottom: 1px solid black;
+    
+}
+
+.sideTag{
+    top:0;
+    height: 50%;
+    width: 100%;
+    font-size: 180%;
+}
+
+.settingsContainer{
+    position: absolute;
+    width: 75%;
+    height: 80%;
+    bottom: 0;
+    right: 0;
+    border-top: 2px solid black;
+    overflow-y: auto;
+}
+
+.settingOpt{
+    height: 16%;
+    width: 100%;
+    display: table;
+    position: relative;
+}
+
+.settingText{
+    padding-left: 8%;
+    text-align: left;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 150%;
+    width: 50%;
+}
+
+.settingCategory{
+    padding-left: 4%;
+    text-align: left;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 160%;
+    width: 50%;
+}
+
+.settingBox {
+
+}

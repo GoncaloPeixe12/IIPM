@@ -3,9 +3,8 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 
 import StreamMenu from './StreamMenu';
 import StreamFunc from './StreamFunc';
-import StreamSettings from './StreamSettings';
+import StreamFuncSettings from './StreamFuncSettings';
 import CallFunc from './CallFunc';
-import CallOptions from './CallOptions';
 import ContactList from './ContactList';
 import HelpMenu from './HelpMenu';
 
@@ -16,14 +15,13 @@ import Home from '../Home';
 class StreamingRouter extends Component {
     render() {
         return(
-            <div className={'Home'}>
+            <div>
                 <Router>
                     <Route path={'/StreamFunc'} exact component={StreamMenu}/>
-                    <Route path={'/StreamFunc/1'} exact component={StreamFunc}/>
-                    <Route path={'/StreamFunc/1/1'} component={StreamSettings}/>
-                    <Route path={'/StreamFunc/2'} exact component={CallFunc}/>
-                    <Route path={'/StreamFunc/2/1'} component={CallOptions}/>
-                    <Route path={'/StreamFunc/2/2'} component={ContactList}/>
+                    <Route path={'/StreamFunc/Stream'} exact component={StreamFunc}/>
+                    <Route path={'/StreamFunc/Settings/:id'} component={StreamFuncSettings}/>
+                    <Route path={'/StreamFunc/Call'} exact component={CallFunc}/>
+                    <Route path={'/StreamFunc/Call/Contacts'} component={ContactList}/>
                     <Route path={'/StreamFunc/Help'} component={HelpMenu}/>
                     <Route path={'/Home'} component={Home}/>
                 </Router>

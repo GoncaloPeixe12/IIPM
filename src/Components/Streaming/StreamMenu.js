@@ -10,7 +10,8 @@ class StreamMenu extends Component{
         toStream : false,
         toCall : false,
         toHome: false,
-        toHelp: false
+        toHelp: false,
+        toSettings: false
     }
 
     handleCall = (user) => {
@@ -37,13 +38,19 @@ class StreamMenu extends Component{
         }))
     }
 
+    handleSettings = (user) => {
+        this.setState(() => ({
+            toSettings: true
+        }))
+    }
+
     render(){
         if(this.state.toStream === true){
-            return <Redirect push to='/StreamFunc/1'/>
+            return <Redirect push to='/StreamFunc/Stream'/>
         }
 
         if(this.state.toCall === true){
-            return <Redirect push to='/StreamFunc/2/2'/>
+            return <Redirect push to='/StreamFunc/Call/Contacts'/>
         }
 
         if(this.state.toHome === true){
@@ -52,6 +59,10 @@ class StreamMenu extends Component{
 
         if(this.state.toHelp === true){
             return <Redirect push to='/StreamFunc/Help'/>
+        }
+
+        if(this.state.toSettings === true){
+            return <Redirect push to='/StreamFunc/Settings/stream'/>
         }
 
         return(
@@ -66,7 +77,7 @@ class StreamMenu extends Component{
                         <button className={'roundButton notBackground'} onClick={this.handleCall}><FaPhone size='4em'/></button>
                         <button className={'roundButton rightButton notBackground'} onClick={this.handleStream}><FaVideo size='4em'/></button>
                     </div>
-                    <button className={'settingsButton notBackground'}><FaCog size='4em'/></button>
+                    <button className={'settingsButton notBackground'} onClick={this.handleSettings}><FaCog size='4em'/></button>
                 </div>
             </div>
         )

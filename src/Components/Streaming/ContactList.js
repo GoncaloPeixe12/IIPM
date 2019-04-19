@@ -53,7 +53,7 @@ class ContactList extends Component{
                     <div className={'listItem'} style={{display: 'none'}} onClick={this.toggleSelect()}>Ethan</div>
 
                 </div>
-                <button className={'settingsButton notBackground'}><FaPhone size='4em'/></button>
+                <button className={'callButton notBackground'}><FaPhone size='4em'/></button>
             </div>
         )
     }

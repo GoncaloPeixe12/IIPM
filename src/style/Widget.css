@@ -32,3 +32,8 @@
     margin-left:15px;
     font-size: 20px;
 }
+
+.callInfo{
+    height: 50%;
+    position: block;
+}
