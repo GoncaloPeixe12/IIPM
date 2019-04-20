@@ -42,7 +42,7 @@ class StreamFunc extends Component{
         }
 
         if(this.state.toSettings === true){
-            return (<Redirect push to='/StreamFunc/1/1'/>)
+            return (<Redirect push to='/StreamFunc/Settings/stream'/>)
         }
 
         const visible = {
@@ -60,10 +60,12 @@ class StreamFunc extends Component{
 
 
         return (
-            <div className={'buttonContainer streamButtonCont'}>
-                <button className={'streamButton'} onClick={()=>this.handleClick()}><FaPlay style = {play} size='4em'/><FaPause style={pause} size='4em'/></button>
-                <button className={'streamButton'} onClick={()=>this.handleMenu()}><FaStop size='4em'/></button>  
-                <button className={'streamButton'} onClick={()=>this.handleSettings()}><FaCog size='4em'/></button>  
+            <div className={'Home'}>
+                <div className={'buttonContainer streamButtonCont'}>
+                    <button className={'streamButton'} onClick={()=>this.handleClick()}><FaPlay style = {play} size='4em'/><FaPause style={pause} size='4em'/></button>
+                    <button className={'streamButton'} onClick={()=>this.handleMenu()}><FaStop size='4em'/></button>  
+                    <button className={'streamButton'} onClick={()=>this.handleSettings()}><FaCog size='4em'/></button>  
+                </div>
             </div>
         )
     }

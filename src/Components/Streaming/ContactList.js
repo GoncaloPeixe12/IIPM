@@ -2,11 +2,22 @@ import React, { Component } from 'react';
 import {FaPhone, FaAngleDoubleLeft, FaAngleDown, FaAngleUp} from 'react-icons/fa';
 import '../../style/Streaming/ContactList.css';
 import '../../style/Streaming/Menu.css';
+import {Redirect} from 'react-router-dom';
 
 
 class ContactList extends Component{
     static context = {
         router: () => true,
+    }
+
+    state = {
+        toCall: false
+    }
+
+    handleCall = (user) => {
+        this.setState(() => ({
+            toCall: true
+        }))
     }
 
     toggleSelect = (user) => {
@@ -37,6 +48,10 @@ class ContactList extends Component{
             showItem(currentItem += n);
         }
 
+        if( this.state.toCall === true){
+            return <Redirect push to='/StreamFunc/Call'/>
+        }
+
         return(
             <div className={'Home'}>
                 <button className={'backButton notBackground'} onClick={this.props.history.goBack}><FaAngleDoubleLeft size='4em'/></button>
@@ -53,7 +68,7 @@ class ContactList extends Component{
                     <div className={'listItem'} style={{display: 'none'}} onClick={this.toggleSelect()}>Ethan</div>
 
                 </div>
-                <button className={'callButton notBackground'}><FaPhone size='4em'/></button>
+                <button className={'callButton notBackground'} onClick={() => this.handleCall()}><FaPhone size='4em'/></button>
             </div>
         )
     }
