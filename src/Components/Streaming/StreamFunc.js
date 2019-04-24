@@ -5,7 +5,7 @@ import {Redirect} from 'react-router-dom';
 
 class StreamFunc extends Component{
     state = {
-        paused: false,
+        paused: true,
         toMenu: false,
         toSettings: false,
     }
@@ -15,12 +15,14 @@ class StreamFunc extends Component{
             this.setState(() => ({
                 paused: true,
             }))
+            document.getElementsByClassName('video').pause();            
         }
-        else(
+        else{
             this.setState(() => ({
                 paused: false,
             }))
-        )
+            document.getElementsByClassName('video').play();
+        }
     }
 
     handleMenu = (user) => {
@@ -61,6 +63,9 @@ class StreamFunc extends Component{
 
         return (
             <div className={'Home'}>
+                <video className={'video'} muted loop>
+                    <source src={'./funcVid.mp4'} type={'video/mp4'}/>
+                </video>
                 <div className={'buttonContainer streamButtonCont'}>
                     <button className={'streamButton'} onClick={()=>this.handleClick()}><FaPlay style = {play} size='4em'/><FaPause style={pause} size='4em'/></button>
                     <button className={'streamButton'} onClick={()=>this.handleMenu()}><FaStop size='4em'/></button>  

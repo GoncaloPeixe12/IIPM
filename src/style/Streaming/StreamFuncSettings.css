@@ -31,6 +31,7 @@
     width: 100%;
     display: table;
     position: relative;
+    background-color: #aaaaaa;
 }
 
 .settingText{
@@ -39,7 +40,8 @@
     vertical-align: middle;
     display: table-cell;
     font-size: 150%;
-    width: 50%;
+    width: 90%;
+    background-color: #aaaaaa;
 }
 
 .settingCategory{
@@ -48,9 +50,24 @@
     vertical-align: middle;
     display: table-cell;
     font-size: 160%;
-    width: 50%;
+    width: 80%;
+    background-color: #828282;
+    font-weight: bold;
 }
 
 .settingBox {
+    display: table-cell;
+    height: 100%;
+    position: absolute;
+    right: 1%;
+    width: 44.4px;
 
+}
+.dropdown {
+    display: table-cell;
+    height: 100%;
+    position: absolute;
+    right: 1%;
+    overflow-y: scroll;
+    font-size: 150%;
 }

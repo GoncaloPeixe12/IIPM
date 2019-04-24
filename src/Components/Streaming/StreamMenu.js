@@ -68,7 +68,10 @@ class StreamMenu extends Component{
         return(
                
             <div className={'Home'}>
-                           
+                <video className={'video'} muted loop autoPlay>
+                    <source src={'./menuVid.mp4'} type={'video/mp4'}/>
+                </video>
+
                 <div className={'menu'}>
                     <button className={'backButton notBackground'} onClick={() => this.handleHome()}><FaHome size='4em'/></button>
                     <div className={'menuText notBackground'}>Stream</div>
