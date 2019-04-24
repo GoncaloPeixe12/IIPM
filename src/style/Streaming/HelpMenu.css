@@ -1,0 +1,15 @@
+.helpContainer {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-right:10%;
+    bottom: 0;
+}
+
+.helpText {
+    font-size: 130%;
+    padding-bottom: 2%;
+    display: block;
+}

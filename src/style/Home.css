@@ -4,6 +4,7 @@
 
 }
 .Home {
+    position: relative;
     top: auto;
     display: inline-block;
     margin: auto;

@@ -1,0 +1,73 @@
+.optsBar{
+    position: absolute;
+    height: 80%;
+    width:25%;
+    top: 20%;
+    border-top: 2px black solid;
+    border-right: 2px solid black;
+    border-bottom: 1px solid black;
+    
+}
+
+.sideTag{
+    top:0;
+    height: 50%;
+    width: 100%;
+    font-size: 180%;
+}
+
+.settingsContainer{
+    position: absolute;
+    width: 75%;
+    height: 80%;
+    bottom: 0;
+    right: 0;
+    border-top: 2px solid black;
+    overflow-y: auto;
+}
+
+.settingOpt{
+    height: 16%;
+    width: 100%;
+    display: table;
+    position: relative;
+    background-color: #aaaaaa;
+}
+
+.settingText{
+    padding-left: 8%;
+    text-align: left;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 150%;
+    width: 90%;
+    background-color: #aaaaaa;
+}
+
+.settingCategory{
+    padding-left: 4%;
+    text-align: left;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 160%;
+    width: 80%;
+    background-color: #828282;
+    font-weight: bold;
+}
+
+.settingBox {
+    display: table-cell;
+    height: 100%;
+    position: absolute;
+    right: 1%;
+    width: 44.4px;
+
+}
+.dropdown {
+    display: table-cell;
+    height: 100%;
+    position: absolute;
+    right: 1%;
+    overflow-y: scroll;
+    font-size: 150%;
+}

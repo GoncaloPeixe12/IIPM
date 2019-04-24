@@ -1,0 +1,35 @@
+.menu{
+    height:100%;
+    width:100%;
+	position: absolute;
+	z-index: 1;
+}
+
+.buttonContainer{
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+	width: 100%;
+}
+
+.roundButton{
+    z-index: 3;
+    position: relative;
+    top: 35%;
+    left: 20%;
+    height:50%;
+    width: 88.75px;
+    
+    border: solid 3px ;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.rightButton {
+    right: 20%;
+    left: auto;
+}
+
+.notBackground{
+    background-color: #4286f4;
+}
