@@ -65,6 +65,7 @@ class StreamSettings extends Component{
                         <option style={{height: '100%'}} value={'1080'} onClick={(e) => this.handleQuality(e, '1080')}>1080p</option>
                         <option style={{height: '100%'}} value={'1440'} onClick={(e) => this.handleQuality(e, '1440')}>1440p (2K)</option>
                         <option style={{height: '100%'}} value={'2160'} onClick={(e) => this.handleQuality(e, '2160')}>2160p (4k)</option>
+                        <option style={{height: '100%'}} value={'4320'} onClick={(e) => this.handleQuality(e, '4320')}>4320p (8k)</option>
                     </select></div>
 
                 <div className={'settingOpt'}><div className={'settingCategory'}>Notifications</div></div>

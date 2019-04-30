@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import {FaStop, FaPause, FaPlay, FaCog } from 'react-icons/fa';
 import '../../style/Streaming/StreamFunc.css';
 import {Redirect} from 'react-router-dom';
+import funcVid from './funcVid.mp4';
 
 class StreamFunc extends Component{
+    static context = {
+        router: () => true,
+    }
     state = {
         paused: true,
         toMenu: false,
@@ -15,13 +19,13 @@ class StreamFunc extends Component{
             this.setState(() => ({
                 paused: true,
             }))
-            document.getElementsByClassName('video').pause();            
+            document.getElementsByClassName('video')[0].pause();            
         }
         else{
             this.setState(() => ({
                 paused: false,
             }))
-            document.getElementsByClassName('video').play();
+            document.getElementsByClassName('video')[0].play();
         }
     }
 
@@ -64,11 +68,11 @@ class StreamFunc extends Component{
         return (
             <div className={'Home'}>
                 <video className={'video'} muted loop>
-                    <source src={'./funcVid.mp4'} type={'video/mp4'}/>
+                    <source src={funcVid} type={'video/mp4'}/>
                 </video>
                 <div className={'buttonContainer streamButtonCont'}>
                     <button className={'streamButton'} onClick={()=>this.handleClick()}><FaPlay style = {play} size='4em'/><FaPause style={pause} size='4em'/></button>
-                    <button className={'streamButton'} onClick={()=>this.handleMenu()}><FaStop size='4em'/></button>  
+                    <button className={'streamButton'} onClick={this.props.history.goBack}><FaStop size='4em'/></button>  
                     <button className={'streamButton'} onClick={()=>this.handleSettings()}><FaCog size='4em'/></button>  
                 </div>
             </div>

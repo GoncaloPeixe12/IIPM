@@ -3,9 +3,7 @@ import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 
 class RoutingOptions extends Component {
 
-    constructor(props) {
-        super(props);
-    }
+   
     render() {
         return(
             <div className="grid-container">

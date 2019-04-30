@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {FaRegSun, FaRunning, FaCamera} from 'react-icons/fa';
+import {FaRegSun, FaRunning, FaCamera, FaVideo, FaPhone} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import '../style/Hub.css';
 
@@ -33,6 +33,12 @@ class Hub extends Component {
                 </div>
                 <div className={'carousel_item'}>
                     <div><Link to={'StreamFunc'}><FaCamera className={'icon'} size='5em'/></Link></div>
+                </div>
+                <div className={'carousel_item'}>
+                    <div><Link to={'StreamFunc/Call/Contacts'}><FaPhone className={'icon'} size='5em'/></Link></div>
+                </div>
+                <div className={'carousel_item'}>
+                    <div><Link to={'StreamFunc/Stream'}><FaVideo className={'icon'} size='5em'/></Link></div>
                 </div>
                 <a className="prev" onClick={(e) => changeItem(-1, e)}>&#10094;</a>
                 <a className="next" onClick={(e) => changeItem(1 ,e)}>&#10095;</a>

@@ -7,6 +7,7 @@ import RoutingFuncionalityRouter from './Components/RoutingFuncionalityRouter';
 import Widget from './Components/Widget/Widget'
 import MainOptions from "./Components/MainOptions";
 import Streaming from './Components/Streaming/StreamingRouter';
+import HomeHelp from './Components/HomeHelp';
 
 class App extends Component {
 
@@ -19,6 +20,7 @@ class App extends Component {
             <Route path={'/:id'} component={Widget}/>
             <Route path={'/Home/Options'} component={MainOptions}/>
             <Route path={'/StreamFunc'} component={Streaming}/>
+            <Route path={'/Home/Help'} component={HomeHelp}/>
         </Router>
         </div>
 
