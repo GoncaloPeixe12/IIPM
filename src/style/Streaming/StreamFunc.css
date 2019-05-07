@@ -11,3 +11,28 @@
     display: inline-block;
     margin: 0 auto;
 }
+
+.shareButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 2px black solid;
+    border-bottom: 2px black solid;
+}
+
+.views {
+    position: absolute;
+    color: #ff0000;
+    z-index: 3;
+    right: 0;
+    font-size: 150%;
+    font-weight: bolder;
+}
+
+.total {
+    top: 0;
+}
+
+.current {
+    top: 10%;
+}

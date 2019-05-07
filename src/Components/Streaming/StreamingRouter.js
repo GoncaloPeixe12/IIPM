@@ -18,7 +18,7 @@ class StreamingRouter extends Component {
             <div>
                 <Router>
                     <Route path={'/StreamFunc'} exact component={StreamMenu}/>
-                    <Route path={'/StreamFunc/Stream'} exact component={StreamFunc}/>
+                    <Route path={'/StreamFunc/Stream'} component={StreamFunc}/>
                     <Route path={'/StreamFunc/Settings/:id'} component={StreamFuncSettings}/>
                     <Route path={'/StreamFunc/Call'} exact component={CallFunc}/>
                     <Route path={'/StreamFunc/Call/Contacts'} component={ContactList}/>

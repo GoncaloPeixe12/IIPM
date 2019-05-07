@@ -23,11 +23,12 @@
     bottom: 0;
     right: 0;
     border-top: 2px solid black;
-    overflow-y: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .settingOpt{
-    height: 16%;
+    height: 16.6666666%;
     width: 100%;
     display: table;
     position: relative;
