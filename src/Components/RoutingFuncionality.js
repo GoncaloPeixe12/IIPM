@@ -43,7 +43,7 @@ class RoutingFuncionality extends Component{
                     <Row>
                         <Col style={style}>
                             <button className={"LargeButton"}>
-                                <Link to={'/FuncRouter/1/3'}>:.:</Link>
+                                <Link to={'/FuncRouter/1/3'}>: . :</Link>
                             </button>
                         </Col>
                     </Row>
