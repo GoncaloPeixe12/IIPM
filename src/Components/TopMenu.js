@@ -7,6 +7,9 @@ import {Link } from 'react-router-dom';
 
 
 class TopMenu extends Component {
+    state = {
+        directory: ''
+    }
     static context = {
         router: () => true,
     }
@@ -19,7 +22,7 @@ class TopMenu extends Component {
                         <Link to={'/Home'}><FaHome/></Link>
                     </Button> </div>
                     <div className='col-1'> <Button onClick={this.props.history.goBack}><FaAngleDoubleLeft/></Button></div>
-                    <div className='col '>  </div>
+                    <div className='col '> {this.state.directory} </div>
                 </div>
             </div>
         )
