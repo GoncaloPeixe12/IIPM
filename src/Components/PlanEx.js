@@ -11,11 +11,12 @@ class PlanEx extends Component {
   onFormSubmit = async term => {
     const response = await maps.get("/mia/1.6/", {
       params: {
-        co: term
+        // co: term
       }
     });
+    console.log(response);
     this.setState({
-      image: response.data
+      image: response.data.items
     });
   };
 
