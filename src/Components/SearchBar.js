@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../style/RoutingFuncionality.css";
 import "../style/App.css";
-import maps from "../apis/maps";
 
 class SearchBar extends Component {
   state = {
