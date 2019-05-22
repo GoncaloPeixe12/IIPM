@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {FaAngleDoubleLeft} from 'react-icons/fa';
+import {FaAngleDoubleLeft, FaCheck} from 'react-icons/fa';
 import '../../style/Streaming/Menu.css';
 import '../../style/Home.css';
 import '../../style/Streaming/StreamFuncSettings.css';
@@ -41,6 +41,7 @@ class StreamFuncSettings extends Component{
             return(
                 <div className={'Home'}>
                     <button className={'backButton notBackground'} onClick={this.props.history.goBack}><FaAngleDoubleLeft size='4em'/></button>
+                    <button className={'acceptButton notBackground'} onClick={this.props.history.goBack}><FaCheck size='4em'/></button>
                     <div className={'menuText notBackground'} style={{width: '50%'}}>Stream Settings</div>
                     <div className={'optsBar'}>
                         <button className={'sideTag'} style={{borderBottom: '1px solid black', backgroundColor: 'black', color: 'white'}} onClick={this.handleStream}>Stream</button>
@@ -53,6 +54,7 @@ class StreamFuncSettings extends Component{
             return(
                 <div className={'Home'}>
                     <button className={'backButton notBackground'} onClick={this.props.history.goBack}><FaAngleDoubleLeft size='4em'/></button>
+                    <button className={'acceptButton notBackground'} onClick={this.props.history.goBack}><FaCheck size='4em'/></button>
                     <div className={'menuText notBackground'} style={{width: '50%'}}>Stream Settings</div>
                     <div className={'optsBar'}>
                         <button className={'sideTag'} style={{borderBottom: '1px solid black'}} onClick={this.handleStream}>Stream</button>
