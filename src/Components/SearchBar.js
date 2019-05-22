@@ -1,35 +1,31 @@
-import React, { Component } from "react";
-import "../style/RoutingFuncionality.css";
-import "../style/App.css";
+/*
+import React from "react";
+import ReactDOM from "react-dom";
 
-class SearchBar extends Component {
-  state = {
-    term: ""
+export default class SearchBar extends React.Component {
+  static propTypes = {
+    placeholder: React.PropTypes.string,
+    onPlacesChanged: React.PropTypes.func
   };
-
-  onInputChange = e => {
-    this.setState({ term: e.target.value });
-  };
-
-  onFormSubmit = e => {
-    e.preventDefault();
-    this.props.onFormSubmit(this.state.term);
-  };
-
   render() {
-    return (
-      <div className={"searchbar"}>
-        <form onSubmit={this.onFormSubmit} className={"ui form"}>
-          <input
-            type="text"
-            name="search"
-            placeholder="Search for a starting point.."
-            value={this.state.term}
-            onChange={this.onInputChange}
-          />
-        </form>
-      </div>
-    );
+    return <input ref="input" {...this.props} type="text" />;
   }
+  onPlacesChanged = () => {
+    if (this.props.onPlacesChanged) {
+      this.props.onPlacesChanged(this.searchBox.getPlaces());
+    }
+  };
+  /*
+  componentDidMount() {
+    let input = ReactDOM.findDOMNode(this.refs.input);
+    this.searchBox = new google.maps.places.SearchBox(input);
+    this.searchBox.addListener("places_changed", this.onPlacesChanged);
+  }
+  componentWillUnmount() {
+    // https://developers.google.com/maps/documentation/javascript/events#removing
+    google.maps.event.clearInstanceListeners(this.searchBox);
+  }
+
+
 }
-export default SearchBar;
+*/

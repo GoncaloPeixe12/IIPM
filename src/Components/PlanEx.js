@@ -3,6 +3,7 @@ import iu from "../iu.png";
 import "../style/Ex.css";
 // import SearchBar from "./SearchBar";
 import Maps from "./Maps";
+import SearchBar from "./SearchBar";
 
 class PlanEx extends Component {
   state = {
