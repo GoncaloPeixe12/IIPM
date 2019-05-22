@@ -4,7 +4,7 @@ import KEY from "../keys";
 
 const mapStyles = {
   width: "100%",
-  height: "255px"
+  height: "300px"
 };
 
 export class MapContainer extends React.Component {
