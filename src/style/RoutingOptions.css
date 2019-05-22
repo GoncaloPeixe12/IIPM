@@ -1,0 +1,6 @@
+.grid-container {
+    display-type: block;
+    position: relative;
+    height: 40px;
+    width: 30px;
+}

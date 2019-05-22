@@ -4,6 +4,7 @@ import '../style/RoutingFuncionality.css';
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from "react-bootstrap/Row";
+import Button from "react-bootstrap/Button";
 import { Link } from 'react-router-dom';
 import "../style/Buttons.css";
 
@@ -12,6 +13,7 @@ class RoutingFuncionality extends Component{
 
         const style = {
             textAlign: 'center',
+            marginTop: '50px'
         };
         const containerStyle = {
             marginTop: 'auto',
@@ -24,21 +26,32 @@ class RoutingFuncionality extends Component{
                 <Container style={containerStyle}>
                     <Row>
                         <Col style={style}>
-                            <button className={"LargeButton"}>
-                                <Link to={'/FuncRouter/1/1'}>Plan</Link>
-                            </button>
+                            <Link to={'/FuncRouter/1/1'}>
+                                <Button className={"LargeButton"}>
+                                    Plan
+                                </Button>
+                            </Link>
                         </Col>
                         <Col style={style}>
-                            <button className={"LargeButton"}>
-                            <Link to={'/FuncRouter/1/2'}>Start Walking!</Link>
-                            </button>
+                            <Link to={'/FuncRouter/1/2'}>
+                                <Button className={"LargeButton"}>
+                                Start Walking!
+                                </Button>
+                            </Link>
                         </Col>
                     </Row>
                     <Row>
+                        <div>
+
+                        </div>
+                    </Row>
+                    <Row>
                         <Col style={style}>
-                            <button className={"LargeButton"}>
-                                <Link to={'/FuncRouter/1/3'}>:.:</Link>
-                            </button>
+                            <Link to={'/FuncRouter/1/3'}>
+                                <Button className={"LargeButton"}>
+                                    Options
+                                </Button>
+                            </Link>
                         </Col>
                     </Row>
                 </Container>

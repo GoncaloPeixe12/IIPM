@@ -4,6 +4,7 @@ import {FaPhone, FaVideo, FaCog, FaHome, FaQuestion } from 'react-icons/fa';
 import { Redirect  } from 'react-router-dom';
 import '../../style/Streaming/Menu.css';
 import '../../style/Home.css';
+import menuVid from './menuVid.mp4';
 
 class StreamMenu extends Component{
     state = {
@@ -70,7 +71,7 @@ class StreamMenu extends Component{
             <div className={'Home'} style={{boxSizing: 'border-box'}}>
                
                <video className={'video'} muted loop autoPlay>
-                    <source src={'./menuVid.mp4'} type={'video/mp4'}/>
+                    <source src={menuVid} type={'video/mp4'}/>
                 </video>
 
                 <div className={'menu'}>

@@ -3,6 +3,7 @@
     height: 80%;
     width:14%;
     top: 20%;
+    right: 0;
     
 }
 
@@ -10,6 +11,7 @@
     top:0;
     height: 50%;
     width: 100%;
+    border-radius: 5px;
 }
 
 .list{
@@ -17,7 +19,7 @@
     height: 80%;
     width: 86%;
     bottom: 0;
-    right: 0;
+    left: 0;
 }
 
 .listItem{
@@ -25,6 +27,7 @@
     border: 2px solid rgb(49, 49, 49);
     border-bottom: 0px;
     background: gray;
+    font-size: 25px;
 }
 
 .callButton{
