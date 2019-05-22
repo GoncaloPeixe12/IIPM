@@ -21,5 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
 keys.js
+=======
+key.js
+package-lock.json
+>>>>>>> 805a711ac9c9847dcae83ba00b4d41630b481da4
 .idea/workspace.xml

@@ -3,9 +3,24 @@ import Hub from "./Hub";
 import "bootstrap/dist/css/bootstrap.css";
 import "../style/Home.css";
 import { FaBatteryFull, FaQuestionCircle } from "react-icons/fa";
+import { Redirect } from "react-router-dom";
 
 class Home extends Component {
+  state = {
+    toHelp: false
+  };
+
+  handleHelp = user => {
+    this.setState(() => ({
+      toHelp: true
+    }));
+  };
+
   render() {
+    if (this.state.toHelp === true) {
+      return <Redirect push to="/Home/Help" />;
+    }
+
     return (
       <div className={"Home"}>
         <div className={"container"}>
@@ -16,7 +31,7 @@ class Home extends Component {
                 left: "1%",
                 top: "1%",
                 position: "absolute",
-                background: "grey",
+                backgroundColor: "grey",
                 padding: "0"
               }}
             >
