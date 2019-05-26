@@ -6,10 +6,7 @@ import Maps from "./Maps";
 import SearchBar from "./SearchBar";
 
 class PlanEx extends Component {
-  state = {
-    image: iu
-  };
-
+  s;
   render() {
     return (
       <div className={"ex"}>

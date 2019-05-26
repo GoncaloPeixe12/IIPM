@@ -1,40 +1,34 @@
-import React, {Component} from 'react';
-import '../style/App.css';
-import './RoutingOptions';
+import React, { Component } from "react";
+import "../style/App.css";
 import RoutingOptions from "./RoutingOptions";
- class PastRoutes extends Component {
+import Route from "./Route";
 
-     constructor(props) {
-         super(props);
-         this.state = {
-             hover: false,
-             tabId: ''
-         }
-         this.handleHover = this.handleHover.bind(this);
-     }
+class PastRoutes extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hover: false,
+      tabId: "",
+      render: true
+    };
+    this.handleHover = this.handleHover.bind(this);
+  }
 
-     handleHover = (id) => {
-         this.setState({
-             hover: !this.state.hover,
-             tabId: id
-         })
-     }
-    render() {
-        return(
-            <div className={'grid-container'}>
-                <div onClick={() => this.handleHover(1)}>
-                    {this.state.tabId === 1 && this.state.hover === true ? <RoutingOptions text="Route: 4/2/2019"/> : "Route: 4/2/2019"}
-                </div>
-                <div onClick={() => this.handleHover(2)}>
-                    {this.state.tabId === 2 && this.state.hover === true ? <RoutingOptions text="Route: 17/2/2019"/> : "Route: 17/2/2019"}
-                </div>
-                <div onClick={() => this.handleHover(3)}>
-                    {this.state.tabId === 3 && this.state.hover === true ? <RoutingOptions text="Route: 5/3/2019"/> : "Route: 5/3/2019"}
-                </div>
-                <div onClick={() => this.handleHover(4)}>
-                    {this.state.tabId === 4 && this.state.hover === true ? <RoutingOptions text="Route: 20/3/2019"/> : "Route: 20/3/2019"}
-                </div>
-            </div>
-        )
- }}
- export default PastRoutes;
+  handleHover = id => {
+    this.setState({
+      hover: !this.state.hover,
+      tabId: id
+    });
+  };
+  render() {
+    return (
+      <div className={"grid-container"}>
+        <Route id={1} date={"24/10/2018"} hideMe={this.handleDeleteClick} />
+        <Route id={2} date={"30/11/2018"} hideMe={this.handleDeleteClick} />
+        <Route id={3} date={"11/12/2018"} hideMe={this.handleDeleteClick} />
+        <Route id={4} date={"5/4/2019"} hideMe={this.handleDeleteClick} />
+      </div>
+    );
+  }
+}
+export default PastRoutes;
