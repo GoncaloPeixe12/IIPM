@@ -31,7 +31,6 @@ class RoutingOptions extends Component {
           >
             Delete Run
           </button>
-          {this.props.hideMe ? <div>'Ola'</div> : <div>'Nah mate'</div>}
         </div>
       );
     }

@@ -27,10 +27,6 @@ class Route extends React.Component {
     console.log("Iran" + this.state.render);
   };
   render() {
-    console.log(this.props.date);
-    if (() => !this.handleDeleteClick) {
-      console.log("ola");
-    }
     if (this.state.render) {
       return (
         <div>
