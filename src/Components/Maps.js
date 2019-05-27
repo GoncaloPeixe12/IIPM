@@ -10,10 +10,22 @@ const mapStyles = {
 };
 
 export class MapContainer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.onClick = this.onClick.bind(this);
+  }
+
   state = {
     showingInfoWindow: false, //Hides or the shows the infoWindow
     activeMarker: {}, //Shows the active marker upon click
-    selectedPlace: {} //Shows the infoWindow to the selected place upon a marker
+    selectedPlace: {}, //Shows the infoWindow to the selected place upon a marker
+    markers: [
+      {
+        title: "Title showing as a tooltip",
+        name: "Name of the Marker",
+        position: { lat: 37.7789, lng: -122.4545 }
+      }
+    ]
   };
   onMarkerClick = (props, marker, e) =>
     this.setState({
@@ -21,6 +33,24 @@ export class MapContainer extends React.Component {
       activeMarker: marker,
       showingInfoWindow: true
     });
+  onClick(t, map, coord) {
+    const { latLng } = coord;
+    const lat = latLng.lat();
+    const lng = latLng.lng();
+
+    this.setState(previousState => {
+      return {
+        markers: [
+          ...previousState.markers,
+          {
+            title: "",
+            name: "",
+            position: { lat, lng }
+          }
+        ]
+      };
+    });
+  }
 
   onClose = props => {
     if (this.state.showingInfoWindow) {
@@ -38,14 +68,21 @@ export class MapContainer extends React.Component {
         zoom={14}
         style={mapStyles}
         initialCenter={{
-          lat: -1.2884,
-          lng: 36.8233
+          lat: this.props.lat || 38.736946,
+          lng: this.props.lng || -9.142685
         }}
+        onClick={this.onClick}
       >
-        <Marker
-          onClick={this.onMarkerClick}
-          name={"Kenyatta International Convention Centre"}
-        />
+        {this.state.markers.map((marker, index) => (
+          <Marker
+            onClick={this.onMarkerClick}
+            name={marker.name}
+            key={index}
+            title={marker.title}
+            position={marker.position}
+          />
+        ))}
+
         <InfoWindow
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}
